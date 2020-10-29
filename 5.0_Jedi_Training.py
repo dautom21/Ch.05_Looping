@@ -69,7 +69,7 @@ total = 0
 pos = 0
 zero = 0
 neg = 0
-for i in range (7):
+for i in range(7):
     i = int(input("Please enter a number"))
     if i > 0:
         pos = pos + 1
