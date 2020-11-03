@@ -43,7 +43,7 @@ while cont == 1:
         print("Your current score (win loss tie):", win, tie, loss)
         print()
     quit = input("Would you like to keep embarrassing yourself? (y)es or (n)o?  ")
-    if quit == "y":
+    if quit.lower() == "y" or quit.lower() == "yes":
         print("Alright. Suffer then.")
         print()
         cont = 1
