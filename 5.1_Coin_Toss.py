@@ -10,7 +10,7 @@ import random
 heads = 0
 tails = 0
 for number in range(50):
-    number = (random.randrange(0,2))
+    number = random.randrange(0,2)
     if number == 1:
         heads = heads + 1
     else:

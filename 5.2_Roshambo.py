@@ -10,7 +10,10 @@ Add conditional statements to figure out who wins and keep the records
 When the user quits print a win/loss record
 
 '''
+import random
 
+for i in range(1):
+    i =
 
 
 
