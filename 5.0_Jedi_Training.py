@@ -13,8 +13,10 @@ print("The total is:", total)
   
 
 cont = "no"
-while cont == "no":
-    cont = input("Would you like to continue?  ")
+while cont == "no":                                         # This is just to keep things a little more clean rather than have it run all of them at the same time
+    cont = input("Would you like to continue? Yes or no?  ")
+    if cont == "no":
+        print("Too bad lmao. I'll ask you again")
 
 
 '''
@@ -27,8 +29,9 @@ for i in range(1,51):
 
 cont = "no"
 while cont == "no":
-    cont = input("Would you like to continue?  ")
-
+    cont = input("Would you like to continue? Yes or no? ")
+    if cont == "no":
+        print("Too bad lmao. I'll ask you again")
 
 '''
   3. Write a program that will use a WHILE loop to count from
@@ -43,8 +46,9 @@ print("Blast off!")
 
 cont = "no"
 while cont == "no":
-    cont = input("Would you like to continue?  ")
-
+    cont = input("Would you like to continue? Yes or no?  ")
+    if cont == "no":
+        print("Too bad lmao. I'll ask you again")
 
 '''
   4. Write a program that prints a random integer from 1 to 10 (inclusive).
@@ -52,7 +56,11 @@ while cont == "no":
 import random
 print(random.randrange(1,11))
 
-
+cont = "no"
+while cont == "no":
+    cont = input("Would you like to continue? Yes or no?  ")
+    if cont == "no":
+        print("Too bad lmao. I'll ask you again")
 
 
 '''
