@@ -10,15 +10,16 @@ Add conditional statements to figure out who wins and keep the records
 When the user quits print a win/loss record
 
 '''
+
 import random
 win = 0
 loss = 0
 tie = 0
-print("Choose Rock (1), Paper (2), or Scissors (3)")
+cont = 1
+while cont == 1:
+    print("Choose Rock (1), Paper (2), or Scissors (3)")
+    choice = int(input("Your choice:  "))
 
-choice = int(input("Your choice:  "))
-
-for i in range(1):
     i = random.randrange(1,4)
     if i == 1:
         print("Code: Rock")
@@ -26,22 +27,23 @@ for i in range(1):
         print("Code: Paper")
     else:
         print("Code: Scissors")
-
-if choice == 1 and i == 2 or choice == 2 and i == 3 or choice == 3 and i == 1:
-    print("How'd you lose? You can literally see the code fool")
-    loss = loss + 1
-elif choice == 1 and i == 3 or choice == 2 and i == 1 or choice == 3 and i == 2:
-    print("How'd you win? I thought I rigged this code")
-    win = win + 1
-elif choice == 1 and i == 1 or choice == 2 and i == 2 or choice == 3 and i == 3:
-    print("Ties are just undocumented losses, but I will document them so I can mock you")
-    tie = tie + 1
-
-print("Your score (win, tie, loss) is currently:", win, tie, loss)
-
-cont = "no"
-while cont == "no":
-    cont = input("Would you like to embarrass yourself again? Yes or no?  ")
-    if cont == "no":
-        print("Too bad lmao. wait")
-    elif cont == "yes":
+    if choice == 1 and i == 2 or choice == 2 and i == 3 or choice == 3 and i == 1:
+        print("How'd you lose? You can literally see the code fool")
+        loss = loss + 1
+        print("Your current score (win loss tie):", win, tie, loss)
+    elif choice == 1 and i == 3 or choice == 2 and i == 1 or choice == 3 and i == 2:
+        print("How'd you win? I thought I rigged this code")
+        win = win + 1
+        print("Your current score (win loss tie):", win, tie, loss)
+    elif choice == 1 and i == 1 or choice == 2 and i == 2 or choice == 3 and i == 3:
+        print("Ties are just undocumented losses, but I will document them so I can laugh at you")
+        tie = tie + 1
+        print("Your current score (win loss tie):", win, tie, loss)
+        print()
+    quit = input("Would you like to keep embarrassing yourself? Yes or no?  ")
+    if quit == "yes":
+        print("Alright. Suffer then.")
+        cont = 1
+    else:
+        print("Finally.  I need an actual person, not a bot")
+        cont = 0
