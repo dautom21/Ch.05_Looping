@@ -49,5 +49,4 @@ while cont == 1:
         cont = 1
     else:
         print("Finally.  I need an actual person, not a bot")
-        print()
         cont = 0
