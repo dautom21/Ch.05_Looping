@@ -31,10 +31,12 @@ while cont == 1:
         print("How'd you lose? You can literally see the code fool")
         loss = loss + 1
         print("Your current score (win loss tie):", win, tie, loss)
+        print()
     elif choice == 1 and i == 3 or choice == 2 and i == 1 or choice == 3 and i == 2:
         print("How'd you win? I thought I rigged this code")
         win = win + 1
         print("Your current score (win loss tie):", win, tie, loss)
+        print()
     elif choice == 1 and i == 1 or choice == 2 and i == 2 or choice == 3 and i == 3:
         print("Ties are just undocumented losses, but I will document them so I can laugh at you")
         tie = tie + 1
@@ -43,7 +45,9 @@ while cont == 1:
     quit = input("Would you like to keep embarrassing yourself? Yes or no?  ")
     if quit == "yes":
         print("Alright. Suffer then.")
+        print()
         cont = 1
     else:
         print("Finally.  I need an actual person, not a bot")
+        print()
         cont = 0
